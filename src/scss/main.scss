@@ -213,11 +213,13 @@ img {
   width: fit-content;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
   height: 100px;
+
   &__heading {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
     color: colors.$white;
+    transition: color 0.3s ease;
     &--span {
       display: block;
     }
@@ -228,6 +230,7 @@ img {
     object-fit: cover;
     z-index: -1;
     width: 100%;
+    transition: opacity 0.3s ease;
   }
 }
 
@@ -537,6 +540,16 @@ img {
   .creations__btn:hover {
     color: #fff;
     background-color: #000;
+  }
+  .card:hover img {
+    // background: linear-gradient(
+    //   rgba(255, 255, 255, 0.8),
+    //   rgba(255, 255, 255, 0.7)
+    // );
+    opacity: 0.4;
+  }
+  .card:hover .card__heading {
+    color: #000;
   }
 }
 @media (min-width: 1500px) {

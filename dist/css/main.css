@@ -220,6 +220,7 @@ img {
   bottom: 1rem;
   left: 1rem;
   color: white;
+  transition: color 0.3s ease;
 }
 .card__heading--span {
   display: block;
@@ -230,6 +231,7 @@ img {
   object-fit: cover;
   z-index: -1;
   width: 100%;
+  transition: opacity 0.3s ease;
 }
 
 /* footer */
@@ -558,6 +560,14 @@ img {
   .creations__btn:hover {
     color: #fff;
     background-color: #000;
+  }
+
+  .card:hover img {
+    opacity: 0.4;
+  }
+
+  .card:hover .card__heading {
+    color: #000;
   }
 }
 @media (min-width: 1500px) {
